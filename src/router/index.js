@@ -5,6 +5,7 @@ import Animations from '@/views/Animations'
 
 import SimpleNavigation from '@/views/SimpleNavigation'
 import TabBarNavigation from '@/views/TabBarNavigation'
+import MainScreen from '@/views/MainScreen'
 
 Vue.use(Router)
 
@@ -29,6 +30,11 @@ export default new Router({
       path: '/tabbar',
       name: 'TabBarNavigation',
       component: TabBarNavigation
+    },
+    {
+      path: '/main',
+      name: 'MainScreen',
+      component: MainScreen
     }
   ]
 })

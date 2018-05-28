@@ -1,23 +1,23 @@
 <template>
 	<div id="placeholder-view" class="screen-view">
-		<h2>Placeholder A</h2>
+		<h2>View B</h2>
 
-		<button @click="changeScreen('simpleView', 'slide-right')">Back</button>
+		<button @click="changeScreen('viewA', 'slide-right')">Load View A</button>
 
 	</div>
 </template>
 
 <script>
 
-import SimpleView from '../views/SimpleView';
+import ViewA from '../views/ViewA';
 
 
 export default {
-	name: 'PlaceholderView',
+	name: 'ViewB',
 	data(){
 		return{
 			subviews: {
-				'simpleView': SimpleView
+				'viewA': ViewA
 			}
 		}
 	},

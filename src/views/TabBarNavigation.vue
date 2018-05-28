@@ -1,6 +1,7 @@
 <template>
-	<div id="simple-nav">
+	<div id="tab-bar-nav">
 		<div class="screen">
+
 			<transition name="tabbarTransition">
 				<keep-alive>
 					<component :is="activeView" :key="activeView"></component>
@@ -58,10 +59,6 @@ export default {
 
 
 <style>
-
-#simple-nav{
-}
-
 
 #tab-bar{
 	position: absolute;

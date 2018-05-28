@@ -1,23 +1,23 @@
 <template>
 	<div id="placeholder-view" class="screen-view">
-		<h2>Placeholder A</h2>
+		<h2>View A</h2>
 
-		<button @click="changeScreen('simpleView', 'slide-right')">Back</button>
+		<button @click="changeScreen('viewB', 'slide-left')">Load View B</button>
 
 	</div>
 </template>
 
 <script>
 
-import SimpleView from '../views/SimpleView';
+import ViewB from '../views/ViewB';
 
 
 export default {
-	name: 'PlaceholderView',
+	name: 'ViewA',
 	data(){
 		return{
 			subviews: {
-				'simpleView': SimpleView
+				'viewB': ViewB
 			}
 		}
 	},
@@ -36,7 +36,7 @@ export default {
 <style scoped>
 
 #placeholder-view{
-	background: #03CA1E;
+	background: #f8f8f8;
 }
 
 
